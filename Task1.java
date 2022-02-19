@@ -7,9 +7,9 @@ public class Task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("ВВедите число n");
-        int n = sc.nextInt();
+        int n = Math.abs(sc.nextInt());
 
-        if (n/2 != 0 || n ==1) {
+        if ((n%2) != 0 || n ==1) {
             System.out.println("Нечетное");
         } else {
             System.out.println("Четное");
