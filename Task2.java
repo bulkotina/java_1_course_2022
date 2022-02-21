@@ -11,9 +11,12 @@ public class Task2 {
         System.out.println("Введите числo n: ");
         int n = Math.abs(sc.nextInt());
 
-        if ((m>10&&n>10&&n>m)||(m<10&&n<10&&m>n)||(10-m<10-n)) {
+        if ((m>10&&n>10&&n>m)||(m<10&&n<10&&m>n)||(Math.abs(10-m)<Math.abs(10-n))) {
             System.out.println("Ближайшее к 10 число: " + m);
-        } else {
+        } else if (Math.abs(10-m) == Math.abs(10-n)) {
+            System.out.println("m и n удалены от 10 одинакого");
+        } else
+            {
             System.out.println("Ближайшее к 10 число: " + n);
         };
     }
