@@ -9,7 +9,7 @@ public class Task1 {
         System.out.println("ВВедите число n");
         int n = Math.abs(sc.nextInt());
 
-        if ((n%2) != 0) {
+        if ((n % 2) != 0) {
             System.out.println("Нечетное");
         } else {
             System.out.println("Четное");
