@@ -14,6 +14,7 @@ public class Shape {
     }
 
     double perimeter() {
+        System.out.println("ShapePerimeter()");
         double sum = 0;
         for (int i = 0; i < sides.length; i++) {
             sum = sum + sides[i];

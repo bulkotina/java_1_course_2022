@@ -16,6 +16,15 @@ public class Rectangle extends Shape {
         super(new int[] {length, width, length, width});
     }
 
+    @Override
+    double perimeter(){ //периметр прямоугольника
+        System.out.println("RectanglePerimeter()");
+        return sides[0]*2 + sides[1]*2;
+    }
+
+    double square() {
+        return 0;
+    }
 //    double perimeter() {
 //        double sum = 0;
 //        for (int i = 0; i < sides.length; i++) {

@@ -24,5 +24,17 @@ public class Application {
         Rectangle firstRectangle = new Rectangle(5,4);
         double firstRectanglePerimeter = firstRectangle.perimeter();
         System.out.println("Периметр первого прямоугольника: " + firstRectanglePerimeter);
+
+       ShapeStorage storage = new ShapeStorage();
+       storage.addShape(firstShape);
+       storage.addShape(firstRectangle); //firstRectangle->Shaoe -> shapes[index]
+       storage.addShape(new Rectangle(4,8)); //new Rectangle object created
+        storage.addShape(new Triangle(4,5,6));
+
+        //shapes[0] - Shape
+        //shapes[1] - Rectangle
+        //shapes[0] - Rectangle
+        //shapes[0] - Triangle
+        storage.printPerimeters();
     }
 }
